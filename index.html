@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vivian's website</title>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <meta name="viewpoint" content="width=device-width,
+  initial-scale=1.0">
+
+  <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#who">Who are we</a>
+  <a href="#footprint">Footprint</a>
+  <a href="#tips">Tips for Budget Trip</a>
+  <a href="#contact">Contact Us</a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+
+    return false;
+});
+</script>
+
+
+
+
+
+<div class='jumbotron'>
+    <h2><strong>"</strong>A journey in <strong>Iran </strong>, 5 cities, 5 different stories<strong>"</strong></h2>
+     <p class="col-sm-7" style="margin-left: auto; margin-right: auto; float: none;">When we arrived Tehran, the capital city at 5am, we can smell the essence of Iran right from the airport.*</p>
+
+  <img src='images/sandwich.png' class="img-circle" alt="Cinque Terre">
+  <button type="button" class="btn btn-info">Read more</button>
+</div>
+</head>
+
+<body>
+
+  <div id="page1">
+    <a id="who" class="smooth"></a>
+      Who are we?
+  </div>
+
+  <div id="page2">
+    <a id="footprint" class="smooth"></a>
+      Our footprints on earth!
+  </div>
+
+  <div id="page3">
+    <a id="tips" class="smooth"></a>
+      Tips to save money.
+  <div id="page3">
+    <a id="contact" class="smooth"></a>
+      Contact page content goes here.
+  </div>
+
+
+
+  <div id="buzz">
+    <h2><small>The Buzz</small><br />What are people saying?</h2>
+    <div>
+      <img src='images/person.jpg'>
+      <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
+      <small>Mr Smith, Professional sandwich taster</small>
+    </div>
+    <div>
+      <img src='images/person.jpg'>
+      <p>My team are always far more productive after we order from Sam's. 40% more productive, in fact.</p>
+      <small>Miss McAdam, CEO Workplace Analytics</small>
+    </div>
+    <div>
+      <img src='images/person.jpg'>
+      <p>We switched to Sam's Sarnies and won our first government contract the next day. Coincidence? I think not!</p>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+
+<!-- Sandwich from: © Kosoff | <a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a> & <a href="http://www.stockfreeimages.com/">Stock Free Images</a> -->
+</html>
